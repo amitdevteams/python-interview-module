@@ -1,0 +1,2204 @@
+PYTHON COMPLETE NOTES
+=====================
+Beginner → Intermediate → Advanced
+
+CONTENTS
+--------
+1. Introduction to Python
+2. Installing Python
+3. First Python Program
+4. Comments
+5. Variables
+6. Data Types
+7. Type Conversion
+8. Input and Output
+9. Operators
+10. Strings
+11. If / Else Conditions
+12. Lists
+13. Tuples
+14. Sets
+15. Dictionaries
+16. For Loops
+17. While Loops
+18. Break / Continue / Pass
+19. Functions
+20. Function Arguments
+21. Scope
+22. Modules and Imports
+23. Exception Handling
+24. File Handling
+25. Object-Oriented Programming
+26. Classes and Objects
+27. Inheritance
+28. Polymorphism
+29. Encapsulation
+30. List Comprehension
+31. Lambda Functions
+32. map(), filter(), reduce()
+33. Iterators
+34. Generators
+35. Decorators
+36. JSON
+37. Dates and Times
+38. Regular Expressions
+39. Virtual Environments
+40. pip and Packages
+41. APIs
+42. Databases
+43. SQLite
+44. Testing
+45. Debugging
+46. Useful Built-in Functions
+47. Python Project Ideas
+48. Learning Roadmap
+
+
+==================================================
+1. INTRODUCTION TO PYTHON
+==================================================
+
+Python is a programming language.
+
+Python is commonly used for:
+
+- Web development
+- Automation
+- Data analysis
+- Artificial Intelligence
+- Machine Learning
+- Backend development
+- Scripting
+- Desktop applications
+- Testing
+
+Example:
+
+print("Hello World")
+
+Output:
+
+Hello World
+
+
+==================================================
+2. INSTALLING PYTHON
+==================================================
+
+Download Python from:
+
+https://www.python.org/
+
+After installation, check the version:
+
+python --version
+
+or sometimes:
+
+python3 --version
+
+Example output:
+
+Python 3.14.x
+
+
+==================================================
+3. FIRST PYTHON PROGRAM
+==================================================
+
+Create a file:
+
+hello.py
+
+Write:
+
+print("Hello World")
+
+Run:
+
+python hello.py
+
+Output:
+
+Hello World
+
+
+==================================================
+4. COMMENTS
+==================================================
+
+Comments are ignored by Python.
+
+Single-line comment:
+
+# This is a comment
+
+Example:
+
+# Print hello
+print("Hello")
+
+Multiple-line documentation can be written using triple quotes:
+
+"""
+This is a multi-line
+string/documentation.
+"""
+
+
+==================================================
+5. VARIABLES
+==================================================
+
+A variable stores a value.
+
+Example:
+
+name = "Rahul"
+age = 20
+price = 99.50
+
+print(name)
+print(age)
+print(price)
+
+You can change a variable:
+
+age = 20
+age = 21
+
+print(age)
+
+Output:
+
+21
+
+
+VARIABLE NAMING RULES
+---------------------
+
+Correct:
+
+name = "Rahul"
+user_age = 20
+total_price = 100
+
+Incorrect:
+
+2name = "Rahul"
+user-age = 20
+
+Python is case-sensitive:
+
+name = "Rahul"
+Name = "Amit"
+
+These are two different variables.
+
+
+==================================================
+6. DATA TYPES
+==================================================
+
+Main Python data types:
+
+str        → (Text)
+int        → (Whole Number)
+float      → (Decimal)
+bool       → (True/False)
+list       → (Changeable Collection)
+tuple      → (Fixed Collection)
+set        → (Unique Values)
+dict       → (Key-Value Pairs)
+NoneType   → (No Value)
+
+
+
+STRING
+------
+
+name = "Rahul"
+
+INTEGER
+-------
+
+age = 20
+
+FLOAT
+-----
+
+price = 99.99
+
+BOOLEAN
+-------
+
+is_student = True
+
+is_logged_in = False
+
+
+CHECK TYPE
+----------
+
+x = 10
+
+print(type(x))
+
+Output:
+
+<class 'int'>
+
+
+==================================================
+7. TYPE CONVERSION
+==================================================
+
+Convert one data type to another.
+
+String to integer:
+
+age = "20"
+
+age = int(age)
+
+Integer to string:
+
+age = 20
+
+age = str(age)
+
+Integer to float:
+
+x = 10
+
+x = float(x)
+
+Float to integer:
+
+x = 10.5
+
+x = int(x)
+
+Boolean:
+
+x = 1
+
+print(bool(x))
+
+
+==================================================
+8. INPUT AND OUTPUT
+==================================================
+
+OUTPUT
+------
+
+print("Hello")
+
+
+INPUT
+-----
+
+name = input("Enter your name: ")
+
+print("Hello", name)
+
+
+IMPORTANT
+---------
+
+input() normally returns a string.
+
+Example:
+
+age = input("Enter age: ")
+
+If the user enters 20:
+
+age is "20", not integer 20.
+
+
+Convert it:
+
+age = int(input("Enter age: "))
+
+
+Example program:
+
+name = input("Name: ")
+age = int(input("Age: "))
+
+print("Name:", name)
+print("Age:", age)
+
+
+==================================================
+9. OPERATORS
+==================================================
+
+ARITHMETIC OPERATORS
+--------------------
+
+Operator	Meaning	Example	Result
++	Addition — numbers ko jodna	10 + 5	15
+-	Subtraction — ek number se doosra ghataana	10 - 5	5
+*	Multiplication — numbers ko multiply karna	10 * 5	50
+/	Division — number ko divide karna	10 / 5	2.0
+//	Floor Division — division ka floor/whole result	10 // 3	3
+%	Remainder — division ke baad bacha hua	10 % 3	1
+**	Power — kisi number ki power nikalna	2 ** 3	8
+
+
+Examples:
+
+print(10 + 5)
+print(10 - 5)
+print(10 * 5)
+print(10 / 5)
+print(10 // 3)
+print(10 % 3)
+print(2 ** 3)
+
+
+COMPARISON OPERATORS
+--------------------
+
+==    Equal
+!=    Not equal
+>     Greater than
+<     Less than
+>=    Greater/equal
+<=    Less/equal
+
+
+Example:
+
+age = 20
+
+print(age == 20)
+print(age > 18)
+
+
+LOGICAL OPERATORS
+-----------------
+
+and
+or
+not
+
+
+Example:
+
+age = 20
+
+print(age > 18 and age < 30)
+
+
+ASSIGNMENT OPERATORS
+--------------------
+
+=
+
++=
+-=
+*=
+/=
+
+
+Example:
+
+x = 10
+
+x += 5
+
+print(x)
+
+Output:
+
+15
+
+
+==================================================
+10. STRINGS
+==================================================
+
+A string contains text.
+
+name = "Rahul"
+
+You can use single or double quotes:
+
+name = 'Rahul'
+
+name = "Rahul"
+
+
+STRING INDEXING
+---------------
+
+text = "Python"
+
+Positions:
+
+P  y  t  h  o  n
+0  1  2  3  4  5
+
+print(text[0])
+
+Output:
+
+P
+
+
+Negative indexing:
+
+print(text[-1])
+
+Output:
+
+n
+
+
+STRING SLICING
+--------------
+
+text = "Python"
+
+print(text[0:3])
+
+Output:
+
+Pyt
+
+print(text[2:])
+
+Output:
+
+thon
+
+print(text[:4])
+
+Output:
+
+Pyth
+
+
+STRING METHODS
+--------------
+
+text = "hello world"
+
+print(text.upper())
+print(text.lower())
+print(text.capitalize())
+print(text.title())
+
+print(text.replace("world", "Python"))
+
+
+STRIP (strip() ka use string ke starting aur ending ke extra spaces/whitespace ko remove karne ke liye hota hai)
+-----
+
+text = "  hello  "
+
+print(text.strip())
+
+
+SPLIT (We use split() to convert a string into a list)
+-----
+
+text = "apple,banana,mango"
+
+items = text.split(",")
+
+print(items)
+
+
+JOIN
+----
+
+items = ["apple", "banana", "mango"]
+
+text = ", ".join(items)
+
+print(text)
+
+
+F-STRINGS (F-string means formatted string literal. It is used to easily put variables or expressions inside a string)
+---------
+
+name = "Rahul"
+age = 20
+
+print(f"My name is {name} and I am {age} years old.")
+
+
+==================================================
+11. IF / ELSE CONDITIONS
+==================================================
+
+Conditions allow Python to make decisions.
+
+Example:
+
+age = 20
+
+if age >= 18:
+    print("Adult")
+
+
+IF / ELSE
+---------
+
+age = 15
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+
+IF / ELIF / ELSE
+----------------
+
+marks = 75
+
+if marks >= 90:
+    print("A")
+elif marks >= 75:
+    print("B")
+elif marks >= 50:
+    print("C")
+else:
+    print("Fail")
+
+
+IMPORTANT
+---------
+
+Python uses indentation.
+
+Correct:
+
+if age >= 18:
+    print("Adult")
+
+Incorrect:
+
+if age >= 18:
+print("Adult")
+
+
+==================================================
+12. LISTS
+==================================================
+
+A list stores multiple values.
+
+numbers = [10, 20, 30, 40]
+
+print(numbers)
+
+Access:
+
+print(numbers[0])
+
+Change:
+
+numbers[0] = 100
+
+
+LIST METHODS
+------------
+
+numbers.append(50)
+
+numbers.insert(0, 5)
+
+numbers.remove(20)
+
+numbers.pop()
+
+numbers.sort()
+
+numbers.reverse()
+
+print(len(numbers))
+
+
+LOOP THROUGH LIST
+-----------------
+
+fruits = ["apple", "banana", "mango"]
+
+for fruit in fruits:
+    print(fruit)
+
+
+==================================================
+13. TUPLES
+==================================================
+
+A tuple is similar to a list but cannot normally be changed after creation.
+
+numbers = (10, 20, 30)
+
+print(numbers[0])
+
+Tuples are useful when data should remain fixed.
+
+
+==================================================
+14. SETS
+==================================================
+
+A set stores unique values.
+
+numbers = {1, 2, 3, 3, 4}
+
+print(numbers)
+
+Duplicate values are removed.
+
+Useful methods:
+
+add()
+remove()
+discard()
+
+
+Example:
+
+numbers = {1, 2, 3}
+
+numbers.add(4)
+
+print(numbers)
+
+
+==================================================
+15. DICTIONARIES
+==================================================
+
+A dictionary stores key-value pairs.
+
+person = {
+    "name": "Rahul",
+    "age": 20,
+    "city": "Kolkata"
+}
+
+Access:
+
+print(person["name"])
+
+Change:
+
+person["age"] = 21
+
+Add:
+
+person["job"] = "Developer"
+
+
+DICTIONARY METHODS
+------------------
+
+print(person.keys())
+print(person.values())
+print(person.items())
+
+
+LOOP
+----
+
+for key, value in person.items():
+    print(key, value)
+
+
+==================================================
+16. FOR LOOPS
+==================================================
+
+A for loop repeats code.
+
+for i in range(5):
+    print(i)
+
+Output:
+
+0
+1
+2
+3
+4
+
+
+RANGE
+-----
+
+range(5)
+
+0 to 4
+
+range(1, 6)
+
+1 to 5
+
+range(1, 10, 2)
+
+1
+3
+5
+7
+9
+
+
+Example:
+
+for i in range(1, 11):
+    print(i)
+
+
+==================================================
+17. WHILE LOOPS
+==================================================
+
+A while loop continues while a condition is true.
+
+count = 1
+
+while count <= 5:
+    print(count)
+    count += 1
+
+
+IMPORTANT:
+
+Make sure the condition eventually becomes false.
+
+Otherwise you can create an infinite loop.
+
+
+==================================================
+18. BREAK / CONTINUE / PASS
+==================================================
+
+BREAK
+-----
+
+for i in range(10):
+
+    if i == 5:
+        break
+
+    print(i)
+
+
+CONTINUE
+--------
+
+for i in range(5):
+
+    if i == 2:
+        continue
+
+    print(i)
+
+
+PASS
+----
+
+if True:
+    pass
+
+
+==================================================
+19. FUNCTIONS
+==================================================
+
+A function is reusable code.
+
+Example:
+
+def hello():
+    print("Hello")
+
+hello()
+
+
+FUNCTION WITH PARAMETERS
+------------------------
+
+def greet(name):
+    print("Hello", name)
+
+greet("Rahul")
+
+
+RETURN VALUE
+------------
+
+def add(a, b):
+    return a + b
+
+result = add(10, 20)
+
+print(result)
+
+
+==================================================
+20. FUNCTION ARGUMENTS
+==================================================
+
+POSITIONAL ARGUMENTS
+--------------------
+
+def add(a, b):
+    return a + b
+
+add(10, 20)
+
+
+KEYWORD ARGUMENTS
+-----------------
+
+def greet(name, age):
+    print(name, age)
+
+greet(name="Rahul", age=20)
+
+
+DEFAULT ARGUMENT
+----------------
+
+def greet(name="User"):
+    print("Hello", name)
+
+greet()
+
+greet("Rahul")
+
+
+*ARGS
+-----
+
+def add(*numbers):
+    total = 0
+
+    for number in numbers:
+        total += number
+
+    return total
+
+print(add(1, 2, 3, 4))
+
+
+**KWARGS
+--------
+
+def person(**data):
+    print(data)
+
+person(name="Rahul", age=20)
+
+
+==================================================
+21. SCOPE
+==================================================
+
+LOCAL VARIABLE
+--------------
+
+def test():
+    x = 10
+    print(x)
+
+test()
+
+
+GLOBAL VARIABLE
+---------------
+
+x = 10
+
+def test():
+    print(x)
+
+test()
+
+
+Prefer local variables when possible.
+
+
+==================================================
+22. MODULES AND IMPORTS
+==================================================
+
+A module is a Python file containing code.
+
+Example:
+
+import math
+
+print(math.sqrt(25))
+
+
+IMPORT SPECIFIC FUNCTION
+------------------------
+
+from math import sqrt
+
+print(sqrt(25))
+
+
+ALIAS
+-----
+
+import math as m
+
+print(m.sqrt(25))
+
+
+==================================================
+23. EXCEPTION HANDLING
+==================================================
+
+Errors can happen during program execution.
+
+Example:
+
+try:
+    number = int(input("Enter number: "))
+    print(number)
+
+except ValueError:
+    print("Please enter a valid number.")
+
+
+FINALLY
+-------
+
+try:
+    print("Hello")
+except:
+    print("Error")
+finally:
+    print("Finished")
+
+
+RAISING ERROR
+-------------
+
+age = -1
+
+if age < 0:
+    raise ValueError("Age cannot be negative")
+
+
+Avoid using bare "except:" when you can catch a specific exception.
+
+
+==================================================
+24. FILE HANDLING
+==================================================
+
+WRITE FILE
+----------
+
+with open("test.txt", "w") as file:
+    file.write("Hello Python")
+
+
+READ FILE
+---------
+
+with open("test.txt", "r") as file:
+    content = file.read()
+
+print(content)
+
+
+APPEND
+------
+
+with open("test.txt", "a") as file:
+    file.write("\nNew line")
+
+
+COMMON MODES
+------------
+
+r = read
+w = write
+a = append
+x = create
+
+
+==================================================
+25. OBJECT-ORIENTED PROGRAMMING
+==================================================
+
+OOP means Object-Oriented Programming.
+
+Main concepts:
+
+- Class
+- Object
+- Attribute
+- Method
+- Inheritance
+- Encapsulation
+- Polymorphism
+
+
+==================================================
+26. CLASSES AND OBJECTS
+==================================================
+
+Create a class:
+
+class Person:
+
+    def __init__(self, name, age):
+        self.name = name
+        self.age = age
+
+    def introduce(self):
+        print(f"My name is {self.name}")
+
+
+Create object:
+
+person1 = Person("Rahul", 20)
+
+print(person1.name)
+print(person1.age)
+
+person1.introduce()
+
+
+==================================================
+27. INHERITANCE
+==================================================
+
+Inheritance allows one class to inherit another class.
+
+class Animal:
+
+    def speak(self):
+        print("Animal speaks")
+
+
+class Dog(Animal):
+
+    def bark(self):
+        print("Dog barks")
+
+
+dog = Dog()
+
+dog.speak()
+dog.bark()
+
+
+==================================================
+28. POLYMORPHISM
+==================================================
+
+Different classes can use the same method name.
+
+class Dog:
+
+    def speak(self):
+        print("Woof")
+
+
+class Cat:
+
+    def speak(self):
+        print("Meow")
+
+
+animals = [Dog(), Cat()]
+
+for animal in animals:
+    animal.speak()
+
+
+==================================================
+29. ENCAPSULATION
+==================================================
+
+Encapsulation means controlling access to internal data.
+
+Python commonly uses naming conventions such as:
+
+class Person:
+
+    def __init__(self):
+        self._name = "Rahul"
+
+
+Double underscore can trigger name mangling:
+
+class Person:
+
+    def __init__(self):
+        self.__secret = "value"
+
+
+==================================================
+30. LIST COMPREHENSION
+==================================================
+
+Normal:
+
+numbers = []
+
+for i in range(5):
+    numbers.append(i)
+
+List comprehension:
+
+numbers = [i for i in range(5)]
+
+Example:
+
+squares = [x * x for x in range(10)]
+
+print(squares)
+
+
+WITH CONDITION
+--------------
+
+even = [x for x in range(10) if x % 2 == 0]
+
+
+==================================================
+31. LAMBDA FUNCTIONS
+==================================================
+
+A lambda is a small anonymous function.
+
+square = lambda x: x * x
+
+print(square(5))
+
+
+Equivalent normal function:
+
+def square(x):
+    return x * x
+
+
+==================================================
+32. MAP / FILTER / REDUCE
+==================================================
+
+MAP
+---
+
+numbers = [1, 2, 3, 4]
+
+result = map(lambda x: x * 2, numbers)
+
+print(list(result))
+
+
+FILTER
+------
+
+numbers = [1, 2, 3, 4, 5]
+
+result = filter(lambda x: x % 2 == 0, numbers)
+
+print(list(result))
+
+
+REDUCE
+------
+
+from functools import reduce
+
+numbers = [1, 2, 3, 4]
+
+result = reduce(lambda a, b: a + b, numbers)
+
+print(result)
+
+
+==================================================
+33. ITERATORS
+==================================================
+
+An iterator produces values one at a time.
+
+numbers = iter([1, 2, 3])
+
+print(next(numbers))
+print(next(numbers))
+print(next(numbers))
+
+
+==================================================
+34. GENERATORS
+==================================================
+
+Generators produce values lazily.
+
+def numbers():
+    yield 1
+    yield 2
+    yield 3
+
+for number in numbers():
+    print(number)
+
+
+Why generators?
+
+They can save memory when working with large amounts of data.
+
+
+==================================================
+35. DECORATORS
+==================================================
+
+A decorator modifies or extends the behavior of a function.
+
+def decorator(func):
+
+    def wrapper():
+        print("Before")
+        func()
+        print("After")
+
+    return wrapper
+
+
+@decorator
+def hello():
+    print("Hello")
+
+
+hello()
+
+
+==================================================
+36. JSON
+==================================================
+
+JSON is commonly used when exchanging data between applications.
+
+Example JSON:
+
+{
+    "name": "Rahul",
+    "age": 20
+}
+
+
+Python:
+
+import json
+
+data = {
+    "name": "Rahul",
+    "age": 20
+}
+
+text = json.dumps(data)
+
+print(text)
+
+
+JSON TO PYTHON
+--------------
+
+data = json.loads(text)
+
+print(data["name"])
+
+
+==================================================
+37. DATES AND TIMES
+==================================================
+
+Use datetime.
+
+from datetime import datetime
+
+now = datetime.now()
+
+print(now)
+
+
+Specific date:
+
+from datetime import date
+
+today = date.today()
+
+print(today)
+
+
+==================================================
+38. REGULAR EXPRESSIONS
+==================================================
+
+Regular expressions are used for pattern matching.
+
+import re
+
+text = "My phone number is 12345"
+
+result = re.search(r"\d+", text)
+
+if result:
+    print(result.group())
+
+
+Common patterns:
+
+\d = digit
+\w = word character
+\s = whitespace
+.  = any character
+
+
+==================================================
+39. VIRTUAL ENVIRONMENTS
+==================================================
+
+A virtual environment keeps project dependencies separate.
+
+Create:
+
+python -m venv venv
+
+
+Windows:
+
+venv\Scripts\activate
+
+
+Linux/macOS:
+
+source venv/bin/activate
+
+
+Deactivate:
+
+deactivate
+
+
+==================================================
+40. PIP AND PACKAGES
+==================================================
+
+pip installs Python packages.
+
+Example:
+
+pip install requests
+
+
+Check installed packages:
+
+pip list
+
+
+Remove:
+
+pip uninstall requests
+
+
+Save dependencies:
+
+pip freeze > requirements.txt
+
+
+Install from requirements:
+
+pip install -r requirements.txt
+
+
+==================================================
+41. APIs
+==================================================
+
+API means Application Programming Interface.
+
+Python can communicate with web APIs.
+
+Example using requests:
+
+import requests
+
+response = requests.get("https://example.com")
+
+print(response.status_code)
+
+
+For JSON API:
+
+response = requests.get("API_URL")
+
+data = response.json()
+
+print(data)
+
+
+IMPORTANT:
+
+When working with real APIs, follow their authentication,
+rate-limit, privacy, and usage requirements.
+
+
+==================================================
+42. DATABASES
+==================================================
+
+Databases store data.
+
+Examples:
+
+- SQLite
+- PostgreSQL
+- MySQL
+- MongoDB
+
+Python includes SQLite support.
+
+
+==================================================
+43. SQLITE
+==================================================
+
+Example:
+
+import sqlite3
+
+connection = sqlite3.connect("database.db")
+
+cursor = connection.cursor()
+
+cursor.execute("""
+CREATE TABLE IF NOT EXISTS users (
+    id INTEGER PRIMARY KEY,
+    name TEXT,
+    age INTEGER
+)
+""")
+
+connection.commit()
+
+connection.close()
+
+
+INSERT DATA
+-----------
+
+connection = sqlite3.connect("database.db")
+
+cursor = connection.cursor()
+
+cursor.execute(
+    "INSERT INTO users (name, age) VALUES (?, ?)",
+    ("Rahul", 20)
+)
+
+connection.commit()
+connection.close()
+
+
+READ DATA
+---------
+
+connection = sqlite3.connect("database.db")
+
+cursor = connection.cursor()
+
+cursor.execute("SELECT * FROM users")
+
+rows = cursor.fetchall()
+
+for row in rows:
+    print(row)
+
+connection.close()
+
+
+IMPORTANT:
+
+Use parameterized SQL queries instead of building SQL by
+concatenating untrusted user input.
+
+
+==================================================
+44. TESTING
+==================================================
+
+Testing checks whether your program works correctly.
+
+Simple example:
+
+def add(a, b):
+    return a + b
+
+assert add(2, 3) == 5
+
+
+Python also has unittest.
+
+import unittest
+
+
+class TestMath(unittest.TestCase):
+
+    def test_add(self):
+        self.assertEqual(2 + 3, 5)
+
+
+if __name__ == "__main__":
+    unittest.main()
+
+
+Pytest is another popular testing framework.
+
+
+==================================================
+45. DEBUGGING
+==================================================
+
+Debugging means finding and fixing problems.
+
+Simple debugging:
+
+x = 10
+
+print("x =", x)
+
+
+Python also has a debugger.
+
+Example:
+
+breakpoint()
+
+When Python reaches breakpoint(), execution pauses
+so you can inspect the program.
+
+
+Common problems:
+
+1. SyntaxError
+2. NameError
+3. TypeError
+4. ValueError
+5. IndexError
+6. KeyError
+7. FileNotFoundError
+
+
+==================================================
+46. USEFUL BUILT-IN FUNCTIONS
+==================================================
+
+print()
+input()
+len()
+type()
+int()
+float()
+str()
+bool()
+range()
+sum()
+min()
+max()
+sorted()
+abs()
+round()
+enumerate()
+zip()
+any()
+all()
+
+
+Examples:
+
+numbers = [10, 20, 30]
+
+print(len(numbers))
+print(sum(numbers))
+print(max(numbers))
+print(min(numbers))
+
+
+ENUMERATE
+---------
+
+fruits = ["apple", "banana", "mango"]
+
+for index, fruit in enumerate(fruits):
+    print(index, fruit)
+
+
+ZIP
+---
+
+names = ["Rahul", "Amit"]
+ages = [20, 25]
+
+for name, age in zip(names, ages):
+    print(name, age)
+
+
+==================================================
+47. PYTHON PROJECT IDEAS
+==================================================
+
+BEGINNER PROJECTS
+-----------------
+
+1. Calculator
+2. Number guessing game
+3. Simple quiz
+4. To-do list
+5. Unit converter
+6. Password generator
+7. Simple expense tracker
+8. Contact book
+9. Rock-paper-scissors
+10. Digital clock
+
+
+INTERMEDIATE PROJECTS
+---------------------
+
+1. File organizer
+2. Weather application
+3. Currency converter
+4. Web scraper
+5. REST API client
+6. SQLite CRUD application
+7. Blog backend
+8. Chat application
+9. Expense management system
+10. Inventory management system
+
+
+ADVANCED PROJECTS
+-----------------
+
+1. Web application
+2. REST API
+3. Data analysis application
+4. Machine learning project
+5. Automation system
+6. Database-backed application
+7. Authentication system
+8. Task management API
+9. Large-scale data processing tool
+10. Full-stack Python application
+
+
+==================================================
+48. LEARNING ROADMAP
+==================================================
+
+PHASE 1 — ABSOLUTE BEGINNER
+---------------------------
+
+Learn:
+
+- print()
+- comments
+- variables
+- strings
+- integers
+- floats
+- booleans
+- input()
+- type()
+- type conversion
+
+
+Practice:
+
+- Hello World
+- Name and age program
+- Simple calculator
+
+
+PHASE 2 — CONTROL FLOW
+----------------------
+
+Learn:
+
+- if
+- elif
+- else
+- comparison operators
+- logical operators
+- for
+- while
+- break
+- continue
+
+
+Practice:
+
+- Even/odd checker
+- Grade calculator
+- Number guessing game
+- Multiplication table
+
+
+PHASE 3 — DATA STRUCTURES
+-------------------------
+
+Learn:
+
+- list
+- tuple
+- set
+- dictionary
+- indexing
+- slicing
+- methods
+
+
+Practice:
+
+- Shopping list
+- Contact book
+- Student records
+
+
+PHASE 4 — FUNCTIONS
+-------------------
+
+Learn:
+
+- def
+- parameters
+- arguments
+- return
+- default arguments
+- *args
+- **kwargs
+- scope
+
+
+Practice:
+
+- Calculator using functions
+- Banking functions
+- Student management functions
+
+
+PHASE 5 — FILES AND ERRORS
+--------------------------
+
+Learn:
+
+- open()
+- read
+- write
+- append
+- with
+- try
+- except
+- finally
+- raise
+
+
+Practice:
+
+- Notes application
+- To-do list saved to file
+- Expense tracker
+
+
+PHASE 6 — OOP
+-------------
+
+Learn:
+
+- class
+- object
+- __init__
+- self
+- methods
+- inheritance
+- polymorphism
+- encapsulation
+
+
+Practice:
+
+- Bank account
+- Library system
+- Student management system
+
+
+PHASE 7 — INTERMEDIATE PYTHON
+----------------------------
+
+Learn:
+
+- modules
+- packages
+- comprehensions
+- lambda
+- map
+- filter
+- generators
+- decorators
+- iterators
+- JSON
+
+
+Practice:
+
+- API client
+- Data processing application
+
+
+PHASE 8 — REAL-WORLD PYTHON
+---------------------------
+
+Learn:
+
+- pip
+- virtual environments
+- APIs
+- databases
+- SQLite
+- testing
+- debugging
+- Git
+
+
+Practice:
+
+- Database application
+- REST API
+- Automation project
+
+
+PHASE 9 — CHOOSE A SPECIALIZATION
+---------------------------------
+
+After learning core Python, choose a direction.
+
+WEB DEVELOPMENT
+----------------
+
+Learn:
+
+- HTTP
+- HTML/CSS basics
+- Flask or Django
+- REST APIs
+- databases
+- authentication
+
+
+DATA SCIENCE
+------------
+
+Learn:
+
+- NumPy
+- pandas
+- Matplotlib
+- statistics
+- data cleaning
+
+
+AI / MACHINE LEARNING
+---------------------
+
+Learn:
+
+- NumPy
+- pandas
+- scikit-learn
+- mathematics/statistics
+- model evaluation
+- neural networks
+
+
+AUTOMATION
+----------
+
+Learn:
+
+- file handling
+- APIs
+- subprocess
+- scheduling
+- browser automation where appropriate
+
+
+==================================================
+DAILY PRACTICE PLAN
+==================================================
+
+Day 1:
+Variables + print()
+
+Day 2:
+Data types + input()
+
+Day 3:
+Operators
+
+Day 4:
+Strings
+
+Day 5:
+if / else
+
+Day 6:
+for loops
+
+Day 7:
+while loops
+
+Day 8:
+Lists
+
+Day 9:
+Tuples + sets
+
+Day 10:
+Dictionaries
+
+Day 11:
+Functions
+
+Day 12:
+Function arguments
+
+Day 13:
+File handling
+
+Day 14:
+Exception handling
+
+Day 15:
+Mini project
+
+Day 16:
+OOP
+
+Day 17:
+Classes and objects
+
+Day 18:
+Inheritance
+
+Day 19:
+Modules
+
+Day 20:
+JSON
+
+Day 21:
+APIs
+
+Day 22:
+SQLite
+
+Day 23:
+Testing
+
+Day 24:
+Debugging
+
+Day 25:
+Project
+
+
+==================================================
+IMPORTANT PYTHON RULES
+==================================================
+
+1. Python is case-sensitive.
+
+2. Indentation matters.
+
+3. Variable names should be meaningful.
+
+4. Avoid unnecessary global variables.
+
+5. Use functions to organize reusable logic.
+
+6. Handle errors appropriately.
+
+7. Keep functions small and understandable.
+
+8. Practice by writing code, not only reading notes.
+
+9. Read error messages carefully.
+
+10. Build projects after learning each major topic.
+
+
+==================================================
+BEGINNER CHEAT SHEET
+==================================================
+
+PRINT:
+
+print("Hello")
+
+
+VARIABLE:
+
+name = "Rahul"
+
+
+INPUT:
+
+name = input("Name: ")
+
+
+INTEGER INPUT:
+
+age = int(input("Age: "))
+
+
+CONDITION:
+
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+
+
+FOR LOOP:
+
+for i in range(5):
+    print(i)
+
+
+WHILE:
+
+while condition:
+    # code
+
+
+LIST:
+
+items = [1, 2, 3]
+
+
+DICTIONARY:
+
+person = {"name": "Rahul", "age": 20}
+
+
+FUNCTION:
+
+def add(a, b):
+    return a + b
+
+
+CLASS:
+
+class Person:
+
+    def __init__(self, name):
+        self.name = name
+
+
+TRY/EXCEPT:
+
+try:
+    # code
+except ValueError:
+    # handle error
+
+
+FILE:
+
+with open("file.txt", "r") as file:
+    data = file.read()
+
+
+IMPORT:
+
+import math
+
+
+==================================================
+FINAL ADVICE
+==================================================
+
+Do not try to memorize all of these notes.
+
+Learn in this order:
+
+Python basics
+    ↓
+Variables
+    ↓
+Data types
+    ↓
+Input/output
+    ↓
+Operators
+    ↓
+Strings
+    ↓
+Conditions
+    ↓
+Loops
+    ↓
+Lists
+    ↓
+Tuples/Sets
+    ↓
+Dictionaries
+    ↓
+Functions
+    ↓
+Files
+    ↓
+Exceptions
+    ↓
+Modules
+    ↓
+OOP
+    ↓
+Intermediate Python
+    ↓
+APIs
+    ↓
+Databases
+    ↓
+Testing
+    ↓
+Projects
+    ↓
+Specialization
+
+
+MOST IMPORTANT:
+
+READ → WRITE CODE → MAKE MISTAKES → DEBUG → BUILD PROJECTS
+
+Do not only read Python notes.
+
+For every topic, write at least 5-10 small programs.
+
+==================================================
+END OF PYTHON NOTES
+==================================================
